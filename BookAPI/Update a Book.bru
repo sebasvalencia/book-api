@@ -1,0 +1,19 @@
+meta {
+  name: Update a Book
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{base_url}}/books/0
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "title": "1984",
+      "author": "George Orwellssss",
+      "publication_year": 1949
+    }
+}

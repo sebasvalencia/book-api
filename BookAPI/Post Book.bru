@@ -1,0 +1,19 @@
+meta {
+  name: Post Book
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{base_url}}/books/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Nuevo Libro",
+    "author": "Nuevo Autor",
+    "publication_year": 2022
+  }
+}
