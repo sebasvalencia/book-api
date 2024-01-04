@@ -1,7 +1,6 @@
 from fastapi import HTTPException
 from fastapi.testclient import TestClient
 from main import Book, app, books
-from unittest.mock import patch
 
 client = TestClient(app)
 
