@@ -1,6 +1,7 @@
 from fastapi import HTTPException
 from fastapi.testclient import TestClient
-from main import Book, app, books
+from main import app
+from routers.books import Book, books
 
 client = TestClient(app)
 
